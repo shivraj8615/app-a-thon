@@ -390,6 +390,17 @@ docs = ["furo (>=2022.12.7)", "proselint (>=0.13)", "sphinx-autodoc-typehints (>
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.2.2)", "pytest-cov (>=4)", "pytest-mock (>=3.10)", "pytest (>=7.2)"]
 
 [[package]]
+name = "plotly"
+version = "5.13.1"
+description = "An open-source, interactive data visualization library for Python"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+tenacity = ">=6.2.0"
+
+[[package]]
 name = "pluggy"
 version = "1.0.0"
 description = "plugin and hook calling mechanisms for python"
@@ -692,6 +703,17 @@ watchdog = {version = "*", markers = "platform_system != \"Darwin\""}
 snowflake = ["snowflake-snowpark-python"]
 
 [[package]]
+name = "tenacity"
+version = "8.2.2"
+description = "Retry code until it succeeds"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+doc = ["reno", "sphinx", "tornado (>=4.5)"]
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -858,7 +880,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-co
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "b0d30bb924cc837d001d2fcaa0ca8f1c7f5f08c909ca3a3b6a855ccacca77e16"
+content-hash = "0fd829e9193ca6593e5c0ffaac3e244cb56e9d8e93a94311f191eab491fbe21d"
 
 [metadata.files]
 aiohttp = []
@@ -895,6 +917,7 @@ pandas = []
 parso = []
 pillow = []
 platformdirs = []
+plotly = []
 pluggy = []
 protobuf = []
 pyarrow = []
@@ -917,6 +940,7 @@ semver = []
 six = []
 smmap = []
 streamlit = []
+tenacity = []
 toml = []
 tomli = []
 toolz = []
